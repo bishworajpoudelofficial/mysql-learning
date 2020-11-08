@@ -1,0 +1,8 @@
+#Creating a New User and Grant Permissions in MySQL
+
+CREATE USER 'bishworajpoudel'@'localhost' IDENTIFIED BY 'yourpasswordhere';
+GRANT ALL PRIVILEGES ON * . * TO 'bishworajpoudel'@'localhost';
+FLUSH PRIVILEGES;
+
+#For Specific Permission
+GRANT type_of_permission ON database_name.table_name TO 'bishworajpoudel'@'localhost';
