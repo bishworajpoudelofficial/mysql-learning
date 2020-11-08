@@ -1,0 +1,6 @@
+#MysqlCommand to make a copy of database.
+
+#firstdb is your initial running database and db2 is our second database
+mysqldump firstdb > dump.sql
+mysqladmin create db2
+mysql db2 < dump.sql
